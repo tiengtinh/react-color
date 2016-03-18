@@ -17,8 +17,8 @@ export class SliderSwatches extends ReactCSS.Component {
         },
         swatch: {
           boxSizing: 'border-box',
-          width: '20%',
-          paddingRight: '1px',
+          width: '14.28%',
+          paddingRight: '0px',
           float: 'left',
         },
         clear: {
@@ -36,7 +36,10 @@ export class SliderSwatches extends ReactCSS.Component {
     return (
       <div is="swatches">
         <div is="swatch">
-          <SliderSwatch {...this.props} offset=".80" active={ Math.round(this.props.hsl.l * 100) / 100 == .80 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } first />
+          <SliderSwatch {...this.props} offset="1." active={ Math.round(this.props.hsl.l * 100) / 100 == 1 && Math.round(this.props.hsl.s * 100) / 100 == 0 } onClick={ this.handleClick } first />
+        </div>
+        <div is="swatch">
+          <SliderSwatch {...this.props} offset=".80" active={ Math.round(this.props.hsl.l * 100) / 100 == .80 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
         </div>
         <div is="swatch">
           <SliderSwatch {...this.props} offset=".65" active={ Math.round(this.props.hsl.l * 100) / 100 == .65 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
@@ -48,7 +51,10 @@ export class SliderSwatches extends ReactCSS.Component {
           <SliderSwatch {...this.props} offset=".35" active={ Math.round(this.props.hsl.l * 100) / 100 == .35 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
         </div>
         <div is="swatch">
-          <SliderSwatch {...this.props} offset=".20" active={ Math.round(this.props.hsl.l * 100) / 100 == .20 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } last />
+          <SliderSwatch {...this.props} offset=".20" active={ Math.round(this.props.hsl.l * 100) / 100 == .20 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
+        </div>
+        <div is="swatch">
+          <SliderSwatch {...this.props} offset=".0" active={ Math.round(this.props.hsl.l * 100) / 100 == 0 && Math.round(this.props.hsl.s * 100) / 100 == 0 } onClick={ this.handleClick } last />
         </div>
         <div is="clear" />
       </div>

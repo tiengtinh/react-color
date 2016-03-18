@@ -28,7 +28,7 @@ export class SliderSwatch extends ReactCSS.Component {
       },
       active: {
         swatch: {
-          transform: 'scaleY(1.8)',
+          transform: 'scaleY(1.5)',
           borderRadius: '3.6px/2px',
         },
       },
