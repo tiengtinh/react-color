@@ -51,7 +51,7 @@ export class SliderSwatches extends ReactCSS.Component {
           <SliderSwatch {...this.props} offset=".35" active={ Math.round(this.props.hsl.l * 100) / 100 == .35 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
         </div>
         <div is="swatch">
-          <SliderSwatch {...this.props} offset=".20" active={ Math.round(this.props.hsl.l * 100) / 100 == .20 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
+          <SliderSwatch {...this.props} offset=".15" active={ Math.round(this.props.hsl.l * 100) / 100 == .15 && Math.round(this.props.hsl.s * 100) / 100 == .50 } onClick={ this.handleClick } />
         </div>
         <div is="swatch">
           <SliderSwatch {...this.props} offset=".0" active={ Math.round(this.props.hsl.l * 100) / 100 == 0 && Math.round(this.props.hsl.s * 100) / 100 == 0 } onClick={ this.handleClick } last />
